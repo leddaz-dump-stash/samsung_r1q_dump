@@ -1,0 +1,31 @@
+{
+  "update_version": 1,
+  "note": "Disable SMSIP under LTE of Bouygues France except S10, S20 series",
+  "imsprofile_update": {
+    "profile": [
+      {
+        "name": "Bouygues France VoLTE",
+        "mnoname": "Bouygues_FR",
+        "network": [
+          {
+            "type": "lte,hspa,umts,gsm",
+            "services": [
+              "mmtel",
+              "mmtel-video"
+            ],
+            "enabled": true
+          },
+          {
+            "type": "wifi",
+            "services": [
+              "mmtel",
+              "mmtel-video",
+              "smsip"
+            ],
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  }
+}
